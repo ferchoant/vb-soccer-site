@@ -191,3 +191,34 @@ footer a:hover {
   background-color: rgba(255, 255, 255, 0.98);
   box-shadow: 0 25px 45px rgba(15, 23, 42, 0.12);
 }
+
+.form-success {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #16a34a;
+  min-height: 1rem;
+}
+
+.data-card {
+  border-radius: 1.5rem;
+  padding: 2rem;
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.08);
+}
+
+.data-count {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 800;
+  color: var(--vb-red);
+  margin: 1rem 0;
+}
+
+.data-pill {
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  background-color: var(--vb-red-soft);
+  color: var(--vb-red);
+  font-weight: 600;
+  font-size: 0.85rem;
+}

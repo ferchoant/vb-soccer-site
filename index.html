@@ -225,6 +225,56 @@
             <a href="assets/docs/media-kit-vb-soccer-2025.pdf" class="btn-primary inline-flex items-center justify-center" download>Descargar media kit</a>
             <a href="https://wa.me/51999999999" class="btn-secondary inline-flex items-center justify-center" target="_blank" rel="noreferrer">Hablar con el equipo comercial (WhatsApp)</a>
           </div>
+          <div class="mt-10 rounded-2xl border border-white/20 bg-white/5 p-6 shadow-lg">
+            <h3 class="text-2xl font-semibold text-white">Registra tu interés como sponsor</h3>
+            <p class="mt-2 text-gray-200">Completa el formulario y guardaremos los datos en la base de sponsors para que el equipo comercial pueda subirlos a Microsoft o el CRM que prefieras.</p>
+            <form id="sponsor-form" class="mt-6 grid gap-4 md:grid-cols-2">
+              <label class="form-field">
+                <span>Empresa / marca</span>
+                <input type="text" name="empresa" placeholder="Nombre de la empresa" required />
+              </label>
+              <label class="form-field">
+                <span>Persona de contacto</span>
+                <input type="text" name="contacto" placeholder="Nombre y apellido" required />
+              </label>
+              <label class="form-field">
+                <span>Correo corporativo</span>
+                <input type="email" name="correo" placeholder="contacto@empresa.com" required />
+              </label>
+              <label class="form-field">
+                <span>Teléfono / WhatsApp</span>
+                <input type="tel" name="telefono" placeholder="+51 900 000 000" required />
+              </label>
+              <label class="form-field">
+                <span>Plan de interés</span>
+                <select name="plan" required>
+                  <option value="">Selecciona un plan</option>
+                  <option value="bronce">Bronce</option>
+                  <option value="plata">Plata</option>
+                  <option value="oro">Oro</option>
+                  <option value="partner">Partner / a medida</option>
+                </select>
+              </label>
+              <label class="form-field">
+                <span>Objetivo de la activación</span>
+                <select name="objetivo">
+                  <option value="">Selecciona</option>
+                  <option value="awareness">Awareness / branding</option>
+                  <option value="ventas">Ventas / promociones</option>
+                  <option value="comunidad">Impacto comunitario</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </label>
+              <label class="form-field md:col-span-2">
+                <span>Notas adicionales</span>
+                <textarea name="mensaje" rows="3" placeholder="Cuéntanos brevemente tus expectativas"></textarea>
+              </label>
+              <div class="md:col-span-2 flex flex-col gap-3">
+                <button type="submit" class="btn-primary w-full">Guardar en base de sponsors</button>
+                <p id="sponsor-success" class="form-success" aria-live="polite"></p>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
 
@@ -251,7 +301,7 @@
           </div>
           <div class="mt-10 rounded-2xl border border-gray-200 p-6 shadow-sm">
             <h3 class="text-xl font-semibold text-gray-900">Déjanos tus datos y te llamamos</h3>
-            <form class="mt-6 grid gap-4 md:grid-cols-2">
+            <form id="familia-form" class="mt-6 grid gap-4 md:grid-cols-2">
               <label class="form-field">
                 <span>Nombre completo</span>
                 <input type="text" name="nombre" placeholder="Tu nombre" required />
@@ -278,10 +328,12 @@
                 <span>Teléfono / WhatsApp</span>
                 <input type="tel" name="telefono" placeholder="+51 900 000 000" required />
               </label>
-              <div class="md:col-span-2">
+              <div class="md:col-span-2 flex flex-col gap-3">
                 <button type="submit" class="btn-primary w-full">Enviar solicitud</button>
+                <p id="familia-success" class="form-success" aria-live="polite"></p>
               </div>
             </form>
+            <p class="mt-4 text-sm text-gray-500">Los registros se guardan en la base de datos local para exportarlos y subirlos rápidamente a Microsoft Excel, Teams o tu CRM.</p>
           </div>
         </div>
       </section>
@@ -336,6 +388,43 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="registros" class="section-spacing bg-white">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="max-w-3xl">
+            <p class="section-eyebrow">Bases activas</p>
+            <h2 class="section-title">Panel rápido de inscritos</h2>
+            <p class="mt-4 text-lg text-gray-700">Toda la información enviada por sponsors y familias se guarda en dos bases locales. Desde aquí puedes exportarlas en CSV para subirlas a Microsoft 365, SharePoint o cualquier CRM.</p>
+          </div>
+          <div class="mt-10 grid gap-6 md:grid-cols-2">
+            <article class="data-card">
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <p class="text-sm uppercase tracking-wide text-gray-500">Base 01</p>
+                  <h3 class="text-2xl font-semibold text-gray-900">Sponsors interesados</h3>
+                </div>
+                <span class="data-pill">CRM</span>
+              </div>
+              <p class="data-count" id="sponsor-count">0</p>
+              <p class="text-gray-600">Contactos listos para compartir con el equipo comercial o subirlos a Microsoft Dynamics/Excel.</p>
+              <button type="button" class="btn-secondary mt-4 w-full" data-export="sponsor">Descargar CSV sponsors</button>
+            </article>
+            <article class="data-card">
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <p class="text-sm uppercase tracking-wide text-gray-500">Base 02</p>
+                  <h3 class="text-2xl font-semibold text-gray-900">Familia VB Soccer</h3>
+                </div>
+                <span class="data-pill">Inscripciones</span>
+              </div>
+              <p class="data-count" id="familia-count">0</p>
+              <p class="text-gray-600">Solicitudes de jugadoras/es y familias. Exporta y compártelas por Microsoft Teams o correo.</p>
+              <button type="button" class="btn-secondary mt-4 w-full" data-export="familia">Descargar CSV familias</button>
+            </article>
+          </div>
+          <p class="mt-6 text-sm text-gray-500">Tip: comparte el CSV directo o copia y pega los datos en tus bases de Microsoft Access, Excel o Dynamics para tener seguimiento inmediato.</p>
         </div>
       </section>
     </main>
