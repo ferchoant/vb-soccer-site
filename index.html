@@ -1,480 +1,442 @@
 <!doctype html>
 <html lang="es" class="scroll-smooth">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VB Soccer Jesús María | Patrocinio de Talento</title>
-
-  <!-- Canonical & Robots -->
-  <link rel="canonical" href="https://vbsoccer.pe/patrocina" />
-  <meta name="robots" content="index,follow" />
-
-  <!-- Tailwind CSS (modelo) -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Fuente -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
-
-  <!-- Fav / OG -->
-  <link rel="icon" href="./assets/imgs/favicon.svg" />
-  <meta name="description" content="Únete como sponsor a VB Soccer en Jesús María. Impulsamos fútbol y futsal femenino y masculino. Crece con nuestra comunidad real y comprometida." />
-  <meta property="og:title" content="VB Soccer Jesús María | Patrocinio de Talento" />
-  <meta property="og:description" content="Formamos talento en fútbol y futsal con espíritu competitivo y enfoque social. Súmate como sponsor." />
-  <meta property="og:image" content="https://placehold.co/1200x630/15803d/ffffff?text=VB+Soccer+Patrocinio" />
-  <meta property="og:url" content="https://vbsoccer.pe/patrocina" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- JSON-LD (Schema.org) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SportsTeam",
-    "name": "VB Soccer",
-    "alternateName": "Club VB Soccer",
-    "sport": ["Soccer", "Futsal"],
-    "areaServed": "Jesús María, Lima, PE",
-    "location": {
-      "@type": "Place",
-      "name": "Campo de Marte",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Jesús María",
-        "addressRegion": "Lima",
-        "addressCountry": "PE"
-      }
-    },
-    "url": "https://vbsoccer.pe",
-    "logo": "https://placehold.co/300x300/15803d/ffffff?text=VB+Logo",
-    "sameAs": [
-      "https://www.instagram.com/club_vbsoccer_femenino/",
-      "https://www.instagram.com/club_vbsoccer/",
-      "https://www.tiktok.com/@vb.soccer"
-    ],
-    "potentialAction": {
-      "@type": "Action",
-      "name": "Patrocina a VB Soccer",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://vbsoccer.pe/patrocina"
-      }
-    }
-  }
-  </script>
-
-  <style>
-    body { font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
-    .font-heading { font-weight: 800; }
-    .text-primary { color: #D41414; }
-    .bg-primary { background-color: #D41414; }
-    section[id]{ scroll-margin-top: 90px; }
-    /* small helper so existing bootstrap assets in project don't break layout */
-    .logo-img { height: 40px; width: auto; }
-  </style>
-</head>
-<body class="bg-gray-100 text-gray-800">
-
-  <!-- Header -->
-  <header class="bg-white/90 backdrop-blur-sm shadow-md fixed top-0 left-0 right-0 z-50">
-    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="#home" class="flex items-center gap-3">
-        <img src="./assets/imgs/Logo.svg" alt="VB Soccer" class="logo-img" />
-        <span class="text-2xl font-bold text-primary font-heading">VB Soccer</span>
-      </a>
-
-      <button id="menuBtn" class="md:hidden p-2 rounded hover:bg-gray-100" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
-      </button>
-
-      <div class="hidden md:flex space-x-6 items-center">
-        <a href="#quienes-somos" class="text-gray-600 hover:text-primary transition">Quiénes Somos</a>
-        <a href="#logros" class="text-gray-600 hover:text-primary transition">Logros</a>
-        <a href="#comunidad" class="text-gray-600 hover:text-primary transition">Comunidad</a>
-        <a href="#sponsors" class="text-gray-600 hover:text-primary transition">Sponsorship</a>
-        <a href="#contacto" class="text-gray-600 hover:text-primary transition">Contacto</a>
-        <a href="#sponsors" class="bg-primary text-white px-5 py-2 rounded-lg shadow-lg hover:bg-opacity-80 transition transform hover:scale-105" onclick="gtag && gtag('event','cta_sponsor_header')">Patrocina Ahora</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VB Soccer Jesús María | Patrocinio e Inscripciones Oficiales</title>
+    <meta name="description" content="Landing oficial de patrocinio e inscripciones de VB Soccer Jesús María. Futbol y futsal femenino y masculino con impacto comunitario real." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/theme.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <header id="site-header" class="fixed top-0 inset-x-0 z-50 bg-white/95 shadow-sm">
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-4">
+        <a href="#inicio" class="flex items-center gap-3 font-semibold text-gray-900">
+          <img src="assets/imgs/Logo.svg" alt="Logo VB Soccer Jesús María" class="h-10 w-auto" />
+          <span class="text-lg uppercase tracking-wide">VB Soccer Jesús María</span>
+        </a>
+        <nav class="hidden items-center gap-6 text-sm font-medium text-gray-700 lg:flex">
+          <a href="#inicio" data-scroll class="nav-link">Inicio</a>
+          <a href="#quienes" data-scroll class="nav-link">Quiénes somos</a>
+          <a href="#logros" data-scroll class="nav-link">Logros</a>
+          <a href="#comunidad" data-scroll class="nav-link">Comunidad</a>
+          <a href="#sponsorship" data-scroll class="nav-link">Sponsorship</a>
+          <a href="#familia" data-scroll class="nav-link">Ser parte de la familia</a>
+          <a href="#contacto" data-scroll class="nav-link">Contacto</a>
+        </nav>
+        <div class="hidden items-center gap-3 lg:flex">
+          <a href="#sponsorship" data-scroll class="btn-primary">Patrocina ahora</a>
+          <a href="#familia" data-scroll class="btn-secondary">Ser parte de la familia</a>
+        </div>
+        <button id="menu-toggle" class="inline-flex items-center rounded-md border border-gray-200 px-3 py-2 text-sm font-semibold text-gray-800 lg:hidden" aria-expanded="false" aria-controls="mobile-menu">
+          Menú
+        </button>
       </div>
-    </nav>
-
-    <!-- Mobile menu -->
-    <div id="mobileMenu" class="md:hidden hidden border-t border-gray-200">
-      <div class="px-6 py-3 space-y-2">
-        <a href="#quienes-somos" class="block py-2 text-gray-700">Quiénes Somos</a>
-        <a href="#logros" class="block py-2 text-gray-700">Logros</a>
-        <a href="#comunidad" class="block py-2 text-gray-700">Comunidad</a>
-        <a href="#sponsors" class="block py-2 text-gray-700">Sponsorship</a>
-        <a href="#contacto" class="block py-2 text-gray-700">Contacto</a>
-      </div>
-    </div>
-  </header>
-
-  <main class="pt-24">
-    <!-- HERO -->
-    <section id="home" class="h-screen min-h-[680px] flex items-center justify-center text-white relative">
-      <div class="absolute inset-0">
-        <img src="https://placehold.co/1920x1080/D41414/333?text=Entrenos+VB+Soccer" alt="Entrenamiento VB Soccer" class="w-full h-full object-cover opacity-60" loading="eager">
-      </div>
-      <div class="absolute inset-0 bg-gradient-to-b from-[rgba(212,20,20,.7)] to-[rgba(10,10,10,.9)]"></div>
-      <div class="container mx-auto px-6 text-center z-10 relative">
-        <h1 class="text-4xl md:text-6xl font-heading mb-4">VB Soccer — Jesús María: Fútbol y Futsal con proyección</h1>
-        <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-light">Formamos talento femenino y masculino. Súmate como sponsor y crece con una comunidad real y comprometida.</p>
-        <div class="flex flex-col sm:flex-row justify-center gap-4">
-          <a href="#sponsors" class="bg-primary text-white px-8 py-3 rounded-lg text-lg font-semibold shadow-lg">Patrocina Ahora</a>
-          <a href="https://wa.me/51999999999?text=Hola%20VB%20Soccer,%20quisiera%20unirme" target="_blank" rel="noopener" class="bg-transparent border-2 border-yellow-500 text-white px-8 py-3 rounded-lg text-lg font-semibold">Únete (WhatsApp)</a>
+      <div id="mobile-menu" class="hidden border-t border-gray-200 bg-white px-6 py-4 lg:hidden">
+        <div class="flex flex-col gap-3 text-sm font-medium text-gray-800">
+          <a href="#inicio" data-scroll class="nav-link">Inicio</a>
+          <a href="#quienes" data-scroll class="nav-link">Quiénes somos</a>
+          <a href="#logros" data-scroll class="nav-link">Logros</a>
+          <a href="#comunidad" data-scroll class="nav-link">Comunidad</a>
+          <a href="#sponsorship" data-scroll class="nav-link">Sponsorship</a>
+          <a href="#familia" data-scroll class="nav-link">Ser parte de la familia</a>
+          <a href="#contacto" data-scroll class="nav-link">Contacto</a>
+          <a href="#sponsorship" data-scroll class="btn-primary w-full text-center">Patrocina ahora</a>
+          <a href="#familia" data-scroll class="btn-secondary w-full text-center">Ser parte de la familia</a>
         </div>
       </div>
+    </header>
 
-      <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-6 z-10">
-        <div class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-white">
-          <div><span class="text-3xl font-bold">8+</span><span class="block text-sm uppercase">Años</span></div>
-          <div><span class="text-3xl font-bold">150+</span><span class="block text-sm uppercase">Jugadoras/es</span></div>
-          <div><span class="text-3xl font-bold">10+</span><span class="block text-sm uppercase">Torneos</span></div>
-          <div><span class="text-3xl font-bold">25K+</span><span class="block text-sm uppercase">Alcance</span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Quiénes Somos -->
-    <section id="quienes-somos" class="py-24 bg-white">
-      <div class="container mx-auto px-6 max-w-4xl text-center">
-        <h2 class="text-4xl font-heading mb-6">Quiénes Somos</h2>
-        <p class="text-lg text-gray-700 mb-6">Club de Jesús María que impulsa el desarrollo del fútbol y futsal en ramas femenina y masculina. Entrenamos con enfoque competitivo y formativo.</p>
-        <div class="flex flex-wrap justify-center gap-4 mt-6">
-          <span class="bg-black text-yellow-400 text-sm font-semibold px-4 py-2 rounded-full">Fútbol 11 (M/F)</span>
-          <span class="bg-black text-yellow-400 text-sm font-semibold px-4 py-2 rounded-full">Futsal Pro (F)</span>
-          <span class="bg-black text-yellow-400 text-sm font-semibold px-4 py-2 rounded-full">Formativas Sub-12</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Logros -->
-    <section id="logros" class="py-24 bg-gray-100">
-      <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-heading text-center mb-6">Logros y Vitrina</h2>
-        <div class="grid md:grid-cols-3 gap-8 mb-12">
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h3 class="text-xl font-bold text-primary mb-2">Interligas 2023–2025</h3>
-            <p class="text-gray-600">Clasificaciones consecutivas y alto nivel competitivo.</p>
+    <main class="pt-24" id="inicio">
+      <section class="relative isolate overflow-hidden">
+        <div class="absolute inset-0 bg-gray-900/80"></div>
+        <img src="assets/imgs/hero-vb.jpg" alt="Entrenamiento de VB Soccer en Jesús María" class="absolute inset-0 h-full w-full object-cover" />
+        <div class="relative z-10 mx-auto flex max-w-6xl flex-col gap-10 px-6 py-20 text-white lg:flex-row lg:items-center">
+          <div class="max-w-2xl">
+            <p class="text-sm uppercase tracking-widest text-rose-200">Club de fútbol y futsal femenino & masculino</p>
+            <h1 class="mt-4 text-4xl font-bold leading-tight sm:text-5xl">VB Soccer Jesús María — Talento, comunidad y patrocinio con impacto real.</h1>
+            <p class="mt-4 text-lg text-gray-100">Formamos y competimos desde Jesús María con categorías femeninas y masculinas. Generamos visibilidad para sponsors que apuestan por el deporte local y abrimos cupos para jugadoras, jugadores y familias comprometidas.</p>
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a href="#sponsorship" data-scroll class="btn-primary">Patrocina ahora</a>
+              <a href="#familia" data-scroll class="btn-secondary">Ser parte de la familia</a>
+            </div>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h3 class="text-xl font-bold text-primary mb-2">Títulos Distritales</h3>
-            <p class="text-gray-600">Campeones en Jesús María.</p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h3 class="text-xl font-bold text-primary mb-2">Futsal Pro</h3>
-            <p class="text-gray-600">Participación destacada y vitrina de talento.</p>
+          <div class="flex-1 rounded-2xl bg-white/10 p-6 backdrop-blur">
+            <div class="grid grid-cols-2 gap-6 text-center">
+              <div>
+                <p class="text-4xl font-bold text-white">8+</p>
+                <p class="text-sm uppercase tracking-wide text-gray-200">Años formando</p>
+              </div>
+              <div>
+                <p class="text-4xl font-bold text-white">160</p>
+                <p class="text-sm uppercase tracking-wide text-gray-200">Jugadoras/es activos</p>
+              </div>
+              <div>
+                <p class="text-4xl font-bold text-white">12</p>
+                <p class="text-sm uppercase tracking-wide text-gray-200">Torneos anuales</p>
+              </div>
+              <div>
+                <p class="text-4xl font-bold text-white">25K</p>
+                <p class="text-sm uppercase tracking-wide text-gray-200">Alcance en redes</p>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
-          <img loading="lazy" src="https://placehold.co/600x400/D41414/white?text=Equipo+Celebrando" alt="Equipo celebrando" class="rounded-lg object-cover w-full h-40">
-          <img loading="lazy" src="https://placehold.co/600x400/D41414/white?text=Partido+Futsal" alt="Partido futsal" class="rounded-lg object-cover w-full h-40">
-          <img loading="lazy" src="https://placehold.co/600x400/D41414/white?text=Entrenamiento" alt="Entrenamiento" class="rounded-lg object-cover w-full h-40">
+      <section id="quienes" class="section-spacing bg-white">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="max-w-3xl">
+            <p class="section-eyebrow">Identidad</p>
+            <h2 class="section-title">Quiénes somos</h2>
+            <p class="mt-4 text-lg text-gray-700">VB Soccer es un club de fútbol y futsal nacido en Jesús María, con base en el Campo de Marte y canchas aliadas del distrito. Nuestra metodología mezcla formación integral, competencia de alto nivel y trabajo comunitario. Apostamos por valores claros: disciplina, respeto, compromiso y pasión por el barrio.</p>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <span class="chip">Fútbol 11</span>
+            <span class="chip">Futsal competitivo</span>
+            <span class="chip">Formativas mixtas</span>
+            <span class="chip">Programas femeninos</span>
+            <span class="chip">Escuela juvenil</span>
+            <span class="chip">Impacto social</span>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Agenda (próximos partidos) -->
-    <section id="agenda" class="py-24 bg-white">
-      <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-heading text-center mb-8">Agenda y Resultados</h2>
-        <div class="grid md:grid-cols-2 gap-12">
+      <section id="logros" class="section-spacing bg-gray-50">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="grid gap-10 lg:grid-cols-2">
+            <div>
+              <p class="section-eyebrow">Resultados</p>
+              <h2 class="section-title">Logros y vitrina</h2>
+              <div class="mt-6 space-y-6">
+                <div class="rounded-2xl border border-gray-200 p-5 shadow-sm">
+                  <h3 class="text-xl font-semibold text-gray-900">Interligas y ligas distritales</h3>
+                  <p class="mt-2 text-gray-700">Participación constante en Liga Distrital de Jesús María, torneos Metropolitanos y Copa Federación con categorías sub-12, sub-14 y mayores.</p>
+                </div>
+                <div class="rounded-2xl border border-gray-200 p-5 shadow-sm">
+                  <h3 class="text-xl font-semibold text-gray-900">Vitrina de futsal femenino</h3>
+                  <p class="mt-2 text-gray-700">Equipo femenino de futsal con presencia en torneos nacionales y amistosos con clubes profesionales.</p>
+                </div>
+                <div class="rounded-2xl border border-gray-200 p-5 shadow-sm">
+                  <h3 class="text-xl font-semibold text-gray-900">Talento que trasciende</h3>
+                  <p class="mt-2 text-gray-700">Jugadoras y jugadores promovidos a selecciones distritales, clubes de Lima Metropolitana y programas universitarios.</p>
+                </div>
+              </div>
+              <div class="mt-8 rounded-2xl bg-gray-900 px-6 py-5 text-white">
+                <p class="text-sm uppercase tracking-wide text-rose-200">Vitrina de talento</p>
+                <p class="mt-2 text-lg">Cada temporada abrimos convocatorias para mostrar a nuestras jugadoras y jugadores ante visores y marcas. Tu patrocinio se convierte en oportunidades reales.</p>
+              </div>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <img src="assets/imgs/logro-1.jpg" alt="Equipo de VB Soccer celebrando un título distrital" class="rounded-3xl object-cover shadow-lg" />
+              <img src="assets/imgs/logro-2.jpg" alt="Jugadora de futsal VB Soccer en acción" class="rounded-3xl object-cover shadow-lg" />
+              <img src="assets/imgs/logro-3.jpg" alt="Entrenamiento formativo en Campo de Marte" class="rounded-3xl object-cover shadow-lg" />
+              <img src="assets/imgs/logro-4.jpg" alt="Equipo VB Soccer masculino listo para un partido" class="rounded-3xl object-cover shadow-lg" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="comunidad" class="section-spacing bg-white">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="max-w-3xl">
+            <p class="section-eyebrow">Relación</p>
+            <h2 class="section-title">Comunidad y redes</h2>
+            <p class="mt-4 text-lg text-gray-700">Movilizamos familias de Jesús María, Cercado y distritos vecinos. Compartimos historias reales, contenidos de entrenamiento y cobertura de partidos. Cada patrocinador conecta con una comunidad digital activa y presencial en cancha.</p>
+          </div>
+          <div class="mt-10 grid gap-6 md:grid-cols-2">
+            <div class="community-card">
+              <p class="text-sm uppercase tracking-wide text-gray-500">Instagram femenino</p>
+              <h3 class="text-2xl font-semibold text-gray-900">@vbsoccerfem</h3>
+              <p class="text-gray-600">Historias, highlights y convocatorias para categorías femeninas y mixtas.</p>
+              <a href="https://instagram.com/club_vbsoccer_femenino" class="btn-link" target="_blank" rel="noreferrer">Seguir en Instagram</a>
+            </div>
+            <div class="community-card">
+              <p class="text-sm uppercase tracking-wide text-gray-500">Instagram general</p>
+              <h3 class="text-2xl font-semibold text-gray-900">@clubvbsoccer</h3>
+              <p class="text-gray-600">Cobertura de entrenos, torneos juveniles y activaciones con marcas aliadas.</p>
+              <a href="https://instagram.com/club_vbsoccer" class="btn-link" target="_blank" rel="noreferrer">Seguir en Instagram</a>
+            </div>
+            <div class="community-card">
+              <p class="text-sm uppercase tracking-wide text-gray-500">TikTok</p>
+              <h3 class="text-2xl font-semibold text-gray-900">@vb.soccer</h3>
+              <p class="text-gray-600">Retos, escenas detrás de cámara y cápsulas motivacionales.</p>
+              <a href="https://www.tiktok.com/@vb.soccer" class="btn-link" target="_blank" rel="noreferrer">Ver TikTok</a>
+            </div>
+            <div class="community-card">
+              <p class="text-sm uppercase tracking-wide text-gray-500">Comunidad WhatsApp</p>
+              <h3 class="text-2xl font-semibold text-gray-900">Familias VB</h3>
+              <p class="text-gray-600">Información de inscripciones, fixture semanal y activaciones sociales.</p>
+              <a href="https://wa.me/51999999999" class="btn-link" target="_blank" rel="noreferrer">Únete por WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sponsorship" class="section-spacing bg-gray-900 text-white">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="max-w-3xl">
+            <p class="section-eyebrow text-rose-200">Patrocinio</p>
+            <h2 class="section-title text-white">Planes de Sponsorship</h2>
+            <p class="mt-4 text-lg text-gray-200">Construimos paquetes flexibles para marcas que quieren presencia en Jesús María y conexión directa con familias deportivas. Elegimos activaciones según tus objetivos de awareness, ventas o impacto social.</p>
+          </div>
+          <div class="mt-10 grid gap-6 lg:grid-cols-4">
+            <article class="plan-card">
+              <p class="plan-name">Bronce</p>
+              <p class="plan-price">S/ 300 – 700 / mes</p>
+              <ul class="plan-list">
+                <li>Logo en contenidos mensuales</li>
+                <li>Mención en historias y reels</li>
+                <li>Invitación a eventos comunitarios</li>
+              </ul>
+            </article>
+            <article class="plan-card">
+              <p class="plan-name">Plata</p>
+              <p class="plan-price">S/ 700 – 1,500 / mes</p>
+              <ul class="plan-list">
+                <li>Todo lo de Bronce</li>
+                <li>Logo en backings y newsletters</li>
+                <li>Activaciones en partidos locales</li>
+              </ul>
+            </article>
+            <article class="plan-card highlighted">
+              <p class="plan-name">Oro</p>
+              <p class="plan-price">S/ 1,500 – 3,000 / mes</p>
+              <ul class="plan-list">
+                <li>Todo lo de Plata</li>
+                <li>Presencia en indumentaria de entrenamiento</li>
+                <li>Product placement en contenidos especiales</li>
+              </ul>
+            </article>
+            <article class="plan-card">
+              <p class="plan-name">Partner</p>
+              <p class="plan-price">Desde S/ 3,000+ / mes</p>
+              <ul class="plan-list">
+                <li>Exclusividad de categoría</li>
+                <li>Branding en uniformes de juego</li>
+                <li>Campañas integrales con data y reportes</li>
+              </ul>
+            </article>
+          </div>
+          <div class="mt-10 flex flex-col gap-4 text-gray-100 sm:flex-row">
+            <a href="assets/docs/media-kit-vb-soccer-2025.pdf" class="btn-primary inline-flex items-center justify-center" download>Descargar media kit</a>
+            <a href="https://wa.me/51999999999" class="btn-secondary inline-flex items-center justify-center" target="_blank" rel="noreferrer">Hablar con el equipo comercial (WhatsApp)</a>
+          </div>
+          <div class="mt-10 rounded-2xl bg-white/10 p-6 text-white shadow-2xl backdrop-blur">
+            <div class="max-w-2xl">
+              <h3 class="text-2xl font-semibold">Registra tu interés como sponsor</h3>
+              <p class="mt-2 text-gray-200">Llena este formulario corto y guarda los datos localmente para compartirlos rápido con tu equipo o subirlos a Microsoft.</p>
+            </div>
+            <form id="sponsor-form" class="mt-6 grid gap-4 lg:grid-cols-2">
+              <label class="form-field form-field-dark">
+                <span>Empresa o marca</span>
+                <input type="text" name="empresa" placeholder="Nombre de la empresa" required />
+              </label>
+              <label class="form-field form-field-dark">
+                <span>Contacto principal</span>
+                <input type="text" name="contacto" placeholder="Nombre y apellido" required />
+              </label>
+              <label class="form-field form-field-dark">
+                <span>Correo corporativo</span>
+                <input type="email" name="correo" placeholder="contacto@empresa.com" required />
+              </label>
+              <label class="form-field form-field-dark">
+                <span>Teléfono / WhatsApp</span>
+                <input type="tel" name="telefono" placeholder="+51 900 000 000" required />
+              </label>
+              <label class="form-field form-field-dark">
+                <span>Plan de interés</span>
+                <select name="plan" required>
+                  <option value="">Selecciona un plan</option>
+                  <option value="Bronce">Bronce</option>
+                  <option value="Plata">Plata</option>
+                  <option value="Oro">Oro</option>
+                  <option value="Partner">Partner</option>
+                </select>
+              </label>
+              <label class="form-field form-field-dark lg:col-span-2">
+                <span>Notas adicionales</span>
+                <textarea name="mensaje" rows="3" placeholder="Activaciones, fechas o expectativas clave"></textarea>
+              </label>
+              <div class="lg:col-span-2">
+                <button type="submit" class="btn-primary w-full">Guardar registro</button>
+              </div>
+            </form>
+            <div class="mt-4 flex flex-col gap-3 lg:flex-row lg:items-center">
+              <button type="button" class="btn-secondary w-full lg:w-auto" data-export-db="sponsor" data-feedback-target="sponsor-feedback" data-export-filename="vb-sponsors.csv">Descargar base Sponsors (CSV)</button>
+              <p id="sponsor-feedback" class="form-feedback hidden text-sm text-emerald-200" aria-live="polite"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="familia" class="section-spacing bg-white">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="max-w-3xl">
+            <p class="section-eyebrow">Inscripciones</p>
+            <h2 class="section-title">Sé parte de la familia VB Soccer</h2>
+            <p class="mt-4 text-lg text-gray-700">Abrimos plazas para niñas, adolescentes y adultos en fútbol 11 y futsal. Programamos turnos matutinos y nocturnos según categoría.</p>
+          </div>
+          <div class="mt-10 grid gap-6 lg:grid-cols-2">
+            <div class="family-card">
+              <p class="text-sm uppercase tracking-wide text-gray-500">Quiero jugar</p>
+              <h3 class="text-2xl font-semibold text-gray-900">Jugadoras y jugadores</h3>
+              <p class="mt-3 text-gray-600">Categorías sub-8 a mayores | Entrenos en Campo de Marte y Coliseo Chamochumbi | 3 sesiones por semana.</p>
+              <a href="https://wa.me/51999999999?text=Hola%20VB%20Soccer,%20quiero%20informaci%C3%B3n%20sobre%20inscripciones%20para%20jugar." class="btn-primary mt-4 inline-flex items-center justify-center" target="_blank" rel="noreferrer">Inscribirme por WhatsApp</a>
+            </div>
+            <div class="family-card">
+              <p class="text-sm uppercase tracking-wide text-gray-500">Soy familia</p>
+              <h3 class="text-2xl font-semibold text-gray-900">Mamá, papá o apoderado</h3>
+              <p class="mt-3 text-gray-600">Horarios flexibles, programas mixtos y acompañamiento nutricional básico. Recibe todo el brochure en tu correo o WhatsApp.</p>
+              <a href="https://wa.me/51999999999?text=Hola%20VB%20Soccer,%20quiero%20informes%20para%20mi%20hijo/a." class="btn-secondary mt-4 inline-flex items-center justify-center" target="_blank" rel="noreferrer">Solicitar información</a>
+            </div>
+          </div>
+          <div class="mt-10 rounded-2xl border border-gray-200 p-6 shadow-sm">
+            <h3 class="text-xl font-semibold text-gray-900">Déjanos tus datos y te llamamos</h3>
+            <form id="familia-form" class="mt-6 grid gap-4 md:grid-cols-2">
+              <label class="form-field">
+                <span>Nombre completo</span>
+                <input type="text" name="nombre" placeholder="Tu nombre" required />
+              </label>
+              <label class="form-field">
+                <span>Edad del participante</span>
+                <input type="number" name="edad" placeholder="Ej. 13" min="4" max="60" />
+              </label>
+              <label class="form-field md:col-span-2">
+                <span>Categoría de interés</span>
+                <select name="categoria" required>
+                  <option value="">Selecciona una opción</option>
+                  <option value="futbol-formativo">Fútbol formativo</option>
+                  <option value="futbol-competitivo">Fútbol competitivo</option>
+                  <option value="futsal">Futsal</option>
+                  <option value="adultos">Adultos recreativo</option>
+                </select>
+              </label>
+              <label class="form-field">
+                <span>Correo electrónico</span>
+                <input type="email" name="correo" placeholder="nombre@correo.com" required />
+              </label>
+              <label class="form-field">
+                <span>Teléfono / WhatsApp</span>
+                <input type="tel" name="telefono" placeholder="+51 900 000 000" required />
+              </label>
+              <div class="md:col-span-2">
+                <button type="submit" class="btn-primary w-full">Enviar solicitud</button>
+              </div>
+            </form>
+            <div class="mt-4 flex flex-col gap-3 md:flex-row md:items-center">
+              <button type="button" class="btn-secondary w-full md:w-auto" data-export-db="familia" data-feedback-target="familia-feedback" data-export-filename="vb-familias.csv">Descargar base Familias (CSV)</button>
+              <p id="familia-feedback" class="form-feedback hidden text-sm text-emerald-700" aria-live="polite"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="section-spacing bg-gray-50">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="grid gap-10 lg:grid-cols-2">
+            <div>
+              <p class="section-eyebrow">Conexión directa</p>
+              <h2 class="section-title">Contacto</h2>
+              <p class="mt-4 text-lg text-gray-700">Escríbenos para alianzas comerciales, prensa deportiva o dudas sobre inscripciones. Respondemos en menos de 24 horas.</p>
+              <form class="mt-6 space-y-4">
+                <label class="form-field">
+                  <span>Nombre</span>
+                  <input type="text" name="contacto-nombre" placeholder="Nombre completo" required />
+                </label>
+                <label class="form-field">
+                  <span>Email</span>
+                  <input type="email" name="contacto-email" placeholder="correo@empresa.com" required />
+                </label>
+                <label class="form-field">
+                  <span>Teléfono</span>
+                  <input type="tel" name="contacto-telefono" placeholder="+51 900 000 000" />
+                </label>
+                <label class="form-field">
+                  <span>Motivo</span>
+                  <select name="contacto-motivo" required>
+                    <option value="">Selecciona</option>
+                    <option value="sponsor">Patrocinio</option>
+                    <option value="inscripciones">Inscripciones</option>
+                    <option value="prensa">Prensa / medios</option>
+                  </select>
+                </label>
+                <label class="form-field">
+                  <span>Mensaje</span>
+                  <textarea name="contacto-mensaje" rows="4" placeholder="Cuéntanos cómo podemos ayudarte"></textarea>
+                </label>
+                <button type="submit" class="btn-primary w-full">Enviar mensaje</button>
+              </form>
+            </div>
+            <div class="space-y-6">
+              <div class="rounded-2xl bg-white p-6 shadow-sm">
+                <p class="text-sm uppercase tracking-wide text-gray-500">WhatsApp directo</p>
+                <a href="https://wa.me/51999999999" class="mt-2 inline-flex items-center gap-2 text-lg font-semibold text-primary" target="_blank" rel="noreferrer">
+                  +51 999 999 999
+                </a>
+                <p class="mt-4 text-sm text-gray-600">Correo: <a href="mailto:contacto@vbsoccer.pe" class="font-semibold text-gray-900">contacto@vbsoccer.pe</a></p>
+                <p class="text-sm text-gray-600">Ubicación: Campo de Marte, Jesús María, Lima.</p>
+              </div>
+              <div>
+                <img src="assets/imgs/mapa-vb.jpg" alt="Mapa referencial de Jesús María" class="w-full rounded-2xl object-cover" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-200">
+      <div class="mx-auto max-w-6xl px-6 py-12">
+        <div class="grid gap-8 md:grid-cols-4">
           <div>
-            <h3 class="text-2xl font-bold mb-6">Próximos Partidos</h3>
-            <div class="space-y-4">
-              <div class="bg-gray-100 p-4 rounded-lg flex justify-between items-center">
-                <div>
-                  <span class="block text-sm text-gray-600">SÁB, 10 NOV | 16:00</span>
-                  <span class="block font-bold">VB Soccer vs. Rival FC</span>
-                  <span class="block text-sm text-primary">Campo de Marte</span>
-                </div>
-                <a href="#" class="bg-primary text-white px-4 py-2 rounded">+ Agregar</a>
-              </div>
-              <div class="bg-gray-100 p-4 rounded-lg flex justify-between items-center">
-                <div>
-                  <span class="block text-sm text-gray-600">DOM, 18 NOV | 14:00</span>
-                  <span class="block font-bold">VB Futsal vs. Otro Equipo</span>
-                  <span class="block text-sm text-primary">Coliseo Jesús María</span>
-                </div>
-                <a href="#" class="bg-primary text-white px-4 py-2 rounded">+ Agregar</a>
-              </div>
-            </div>
+            <p class="text-lg font-semibold text-white">VB Soccer Jesús María</p>
+            <p class="mt-3 text-sm text-gray-400">Formación, competencia e impacto comunitario en el corazón de Lima.</p>
           </div>
-
           <div>
-            <h3 class="text-2xl font-bold mb-6">Resultados Recientes</h3>
-            <ul class="space-y-3">
-              <li class="bg-gray-100 p-4 rounded-lg flex justify-between items-center">
-                <div>
-                  <span class="block">VB Soccer vs. Club Z</span>
-                  <span class="block text-sm text-gray-500">Interligas - Fecha 5</span>
-                </div>
-                <span class="text-2xl font-bold text-primary">3 - 1</span>
-              </li>
-              <li class="bg-gray-100 p-4 rounded-lg flex justify-between items-center">
-                <div>
-                  <span class="block">VB Futsal vs. Club Y</span>
-                  <span class="block text-sm text-gray-500">Futsal Pro - Fecha 3</span>
-                </div>
-                <span class="text-2xl font-bold text-red-600">2 - 4</span>
-              </li>
+            <p class="text-sm font-semibold uppercase tracking-wide text-gray-400">Navegación</p>
+            <ul class="mt-3 space-y-2 text-sm">
+              <li><a href="#inicio" data-scroll>Inicio</a></li>
+              <li><a href="#quienes" data-scroll>Quiénes somos</a></li>
+              <li><a href="#logros" data-scroll>Logros</a></li>
+              <li><a href="#comunidad" data-scroll>Comunidad</a></li>
+              <li><a href="#sponsorship" data-scroll>Sponsorship</a></li>
+              <li><a href="#familia" data-scroll>Ser parte de la familia</a></li>
+              <li><a href="#contacto" data-scroll>Contacto</a></li>
             </ul>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Comunidad -->
-    <section id="comunidad" class="py-24 bg-gray-100">
-      <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-heading text-center mb-6">Comunidad y Redes</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-          <div class="bg-white p-4 rounded shadow">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3"><img src="https://placehold.co/40x40/E1306C/white?text=IG" alt="" class="rounded-full"><span class="font-semibold">@club_vbsoccer_femenino</span></div>
-              <a href="https://www.instagram.com/club_vbsoccer_femenino/" target="_blank" rel="noopener" class="bg-pink-600 text-white px-3 py-1 rounded">Seguir</a>
-            </div>
-            <img src="https://placehold.co/600x600/e0e0e0/333?text=Post+IG" alt="Post IG" class="rounded w-full object-cover">
-          </div>
-
-          <div class="bg-white p-4 rounded shadow">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3"><img src="https://placehold.co/40x40/000000/white?text=TT" alt="" class="rounded-full"><span class="font-semibold">@vb.soccer</span></div>
-              <a href="https://www.tiktok.com/@vb.soccer" target="_blank" rel="noopener" class="bg-black text-white px-3 py-1 rounded">Seguir</a>
-            </div>
-            <div class="grid grid-cols-2 gap-2">
-              <img src="https://placehold.co/300x500/e0e0e0/333?text=TikTok" alt="TikTok" class="rounded object-cover w-full">
-              <img src="https://placehold.co/300x500/e0e0e0/333?text=TikTok+2" alt="TikTok 2" class="rounded object-cover w-full">
-            </div>
-          </div>
-
-          <div class="bg-white p-4 rounded shadow">
-            <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3"><img src="https://placehold.co/40x40/E1306C/white?text=IG" alt="" class="rounded-full"><span class="font-semibold">@club_vbsoccer</span></div>
-              <a href="https://www.instagram.com/club_vbsoccer/" target="_blank" rel="noopener" class="bg-pink-600 text-white px-3 py-1 rounded">Seguir</a>
-            </div>
-            <div class="grid grid-cols-2 gap-2">
-              <img src="https://placehold.co/300x300/e0e0e0/333?text=Post+1" alt="Post 1" class="rounded object-cover w-full">
-              <img src="https://placehold.co/300x300/e0e0e0/333?text=Post+2" alt="Post 2" class="rounded object-cover w-full">
-            </div>
-          </div>
-        </div>
-
-        <div class="text-center mt-12 flex flex-col sm:flex-row justify-center gap-4">
-          <a href="https://wa.me/51999999999?text=Hola,%20quiero%20unirme" target="_blank" rel="noopener" class="bg-green-600 text-white px-8 py-3 rounded-lg">Únete al WhatsApp</a>
-          <a href="https://www.facebook.com/groups/VBSoccerComunidad" target="_blank" rel="noopener" class="bg-blue-600 text-white px-8 py-3 rounded-lg">Grupo de Facebook</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sponsors -->
-    <section id="sponsors" class="py-24 bg-white">
-      <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-heading text-center mb-6">Plan de Sponsorship</h2>
-        <p class="text-center text-lg mb-12">Impulsa tu marca. Conoce nuestros paquetes diseñados para máxima visibilidad.</p>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Bronce -->
-          <div class="border rounded p-6 shadow flex flex-col">
-            <h3 class="text-2xl font-bold text-yellow-600 mb-3">Bronce</h3>
-            <p class="font-semibold mb-4">S/ 500 – 1,500 / mes</p>
-            <ul class="space-y-2 text-gray-600 flex-grow">
-              <li>Logo en muro sponsors</li>
-              <li>Menciones en historias</li>
-              <li>2 invitaciones match-day</li>
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-wide text-gray-400">Redes</p>
+            <ul class="mt-3 space-y-2 text-sm">
+              <li><a href="https://instagram.com/club_vbsoccer" target="_blank" rel="noreferrer">Instagram general</a></li>
+              <li><a href="https://instagram.com/club_vbsoccer_femenino" target="_blank" rel="noreferrer">Instagram femenino</a></li>
+              <li><a href="https://www.tiktok.com/@vb.soccer" target="_blank" rel="noreferrer">TikTok</a></li>
+              <li><a href="https://wa.me/51999999999" target="_blank" rel="noreferrer">WhatsApp comunidad</a></li>
             </ul>
-            <a href="#contacto" class="mt-6 bg-gray-200 px-4 py-2 rounded text-center">Consultar</a>
           </div>
-
-          <!-- Plata -->
-          <div class="border rounded p-6 shadow flex flex-col">
-            <h3 class="text-2xl font-bold text-gray-500 mb-3">Plata</h3>
-            <p class="font-semibold mb-4">S/ 1,500 – 3,500 / mes</p>
-            <ul class="space-y-2 text-gray-600 flex-grow">
-              <li>Todo lo de Bronce +</li>
-              <li>Logo en banner físico</li>
-              <li>2 posts/mes + 1 reel</li>
-            </ul>
-            <a href="#contacto" class="mt-6 bg-gray-300 px-4 py-2 rounded text-center">Consultar</a>
-          </div>
-
-          <!-- Oro -->
-          <div class="border-2 border-primary rounded p-6 shadow-xl flex flex-col relative">
-            <span class="absolute -top-3 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">Más Popular</span>
-            <h3 class="text-2xl font-bold text-yellow-600 mb-3">Oro</h3>
-            <p class="font-semibold mb-4">S/ 3,500 – 7,000 / mes</p>
-            <ul class="space-y-2 text-gray-600 flex-grow">
-              <li>Todo lo de Plata +</li>
-              <li>Logo en ropa de entreno</li>
-              <li>Activaciones y co-brand</li>
-            </ul>
-            <a href="#contacto" class="mt-6 bg-primary text-white px-4 py-2 rounded text-center">Quiero Patrocinar</a>
-          </div>
-
-          <!-- Partner -->
-          <div class="border rounded p-6 shadow flex flex-col">
-            <h3 class="text-2xl font-bold mb-3">Partner</h3>
-            <p class="font-semibold mb-4">S/ 7,000+ / mes</p>
-            <ul class="space-y-2 text-gray-600 flex-grow">
-              <li>Exclusividad por categoría</li>
-              <li>Logo en uniforme de juego</li>
-              <li>Activaciones trimestrales</li>
-              <li>Reportes de KPIs</li>
-            </ul>
-            <a href="#contacto" class="mt-6 bg-gray-900 text-white px-4 py-2 rounded text-center">Contactar</a>
+          <div class="space-y-3">
+            <a href="#sponsorship" data-scroll class="btn-primary block text-center">Patrocina ahora</a>
+            <a href="#familia" data-scroll class="btn-secondary block text-center">Ser parte de la familia</a>
+            <p class="text-xs text-gray-500">VB Soccer – Jesús María, Lima, Perú</p>
           </div>
         </div>
-
-        <div class="text-center mt-12">
-          <a href="URL_MEDIA_KIT.pdf" target="_blank" rel="noopener" class="text-primary font-semibold">Descarga el Media Kit 2025</a>
-        </div>
+        <div class="mt-10 border-t border-gray-800 pt-6 text-center text-xs text-gray-500">© <span id="copyright-year"></span> VB Soccer. Todos los derechos reservados.</div>
       </div>
-    </section>
+    </footer>
 
-    <!-- Testimonios -->
-    <section id="testimonios" class="py-24 bg-gray-100">
-      <div class="container mx-auto px-6 max-w-5xl">
-        <h2 class="text-4xl font-heading text-center mb-12">Voces del Club</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-white p-6 rounded shadow text-center">
-            <img src="https://placehold.co/100x100/e0e0e0/333?text=Coach" alt="Coach" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-yellow-300">
-            <p class="italic mb-4">"Patrocinar a VB Soccer es una inversión en la comunidad."</p>
-            <p class="font-bold">Juan Pérez</p>
-            <p class="text-sm text-primary">Head Coach</p>
-          </div>
-          <div class="bg-white p-6 rounded shadow text-center">
-            <img src="https://placehold.co/100x100/e0e0e0/333?text=Jugadora" alt="Jugadora" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-yellow-300">
-            <p class="italic mb-4">"El apoyo de los sponsors nos permite competir al más alto nivel."</p>
-            <p class="font-bold">María Rodríguez</p>
-            <p class="text-sm text-primary">Capitana Futsal Pro</p>
-          </div>
-          <div class="bg-white p-6 rounded shadow text-center">
-            <img src="https://placehold.co/100x100/e0e0e0/333?text=Sponsor" alt="Sponsor" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-yellow-300">
-            <p class="italic mb-4">"La activación en Campo de Marte fue un éxito."</p>
-            <p class="font-bold">Carlos Mendoza</p>
-            <p class="text-sm text-primary">Gerente de Marca</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Sugerencia de reemplazo de imágenes -->
+    <!--
+      assets/imgs/hero-vb.jpg → foto panorámica del equipo en Campo de Marte.
+      assets/imgs/logro-1.jpg → equipo celebrando campeonato distrital.
+      assets/imgs/logro-2.jpg → jugadora de futsal en acción.
+      assets/imgs/logro-3.jpg → entrenamiento formativo mixto.
+      assets/imgs/logro-4.jpg → equipo masculino previo a un partido.
+      assets/imgs/mapa-vb.jpg → captura del mapa de Jesús María.
+    -->
 
-    <!-- Contacto & Formulario -->
-    <section id="contacto" class="py-24 bg-black text-gray-100">
-      <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-heading text-center mb-8">Sé Parte de la Familia VB Soccer</h2>
-        <p class="text-center mb-12 max-w-2xl mx-auto">Buscamos marcas que quieran crecer con nosotros y talento joven con ganas de competir.</p>
-
-        <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          <form id="sponsorForm" class="space-y-6 bg-gray-900 p-6 rounded">
-            <div class="grid sm:grid-cols-2 gap-4">
-              <div>
-                <label class="text-sm">Nombre</label>
-                <input name="nombre" required class="mt-1 block w-full rounded bg-gray-800 text-white p-2">
-              </div>
-              <div>
-                <label class="text-sm">Empresa / Marca</label>
-                <input name="empresa" class="mt-1 block w-full rounded bg-gray-800 text-white p-2">
-              </div>
-            </div>
-
-            <div class="grid sm:grid-cols-2 gap-4">
-              <div>
-                <label class="text-sm">Correo</label>
-                <input type="email" name="correo" required class="mt-1 block w-full rounded bg-gray-800 text-white p-2">
-              </div>
-              <div>
-                <label class="text-sm">Teléfono</label>
-                <input type="tel" name="telefono" required class="mt-1 block w-full rounded bg-gray-800 text-white p-2">
-              </div>
-            </div>
-
-            <div>
-              <label class="text-sm">Objetivo de Patrocinio</label>
-              <select name="objetivo" class="mt-1 block w-full rounded bg-gray-800 text-white p-2">
-                <option>Branding y Visibilidad</option>
-                <option>Activación y Muestreo</option>
-                <option>Leads B2B</option>
-                <option>Ventas locales</option>
-                <option>RSE</option>
-              </select>
-            </div>
-
-            <div>
-              <label class="text-sm">Presupuesto</label>
-              <select name="presupuesto" class="mt-1 block w-full rounded bg-gray-800 text-white p-2">
-                <option>No definido</option>
-                <option>Bronce</option>
-                <option>Plata</option>
-                <option>Oro</option>
-                <option>Partner</option>
-              </select>
-            </div>
-
-            <div>
-              <button type="submit" class="w-full bg-primary text-white px-4 py-3 rounded">Enviar Solicitud</button>
-            </div>
-          </form>
-
-          <div class="space-y-6">
-            <div class="bg-gray-900 p-6 rounded">
-              <h3 class="text-2xl font-bold mb-2">Contacto Directo</h3>
-              <p class="text-gray-300 mb-4">Escríbenos por WhatsApp para recibir el Media Kit y agendar una llamada.</p>
-              <a href="https://wa.me/51999999999?text=Hola%20VB%20Soccer,%20estoy%20interesado" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-green-600 px-4 py-3 rounded text-white">Chatea por WhatsApp</a>
-            </div>
-
-            <div class="bg-gray-900 p-6 rounded">
-              <h3 class="text-2xl font-bold mb-2">Nuestra Casa</h3>
-              <p class="text-gray-300 mb-4">Entrenamos en Campo de Marte, Jesús María.</p>
-              <img src="https://placehold.co/600x400/333333/888888?text=Mapa+Campo+de+Marte" alt="Mapa" class="rounded w-full object-cover">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-400 py-12">
-    <div class="container mx-auto px-6 text-center">
-      <div class="flex justify-center space-x-6 mb-6">
-        <a href="https://www.instagram.com/club_vbsoccer_femenino/" target="_blank" rel="noopener" aria-label="Instagram">@IG</a>
-        <a href="https://www.tiktok.com/@vb.soccer" target="_blank" rel="noopener" aria-label="TikTok">@TT</a>
-        <a href="https://www.facebook.com/groups/VBSoccerComunidad" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
-      </div>
-      <p class="text-sm">&copy; 2025 VB Soccer. Todos los derechos reservados. Jesús María, Lima, Perú.</p>
-    </div>
-  </footer>
-
-  <!-- Floating CTA (móvil) -->
-  <a href="https://wa.me/51999999999?text=Hola%20VB%20Soccer,%20estoy%20interesado" target="_blank" rel="noopener" class="md:hidden fixed bottom-4 right-4 bg-green-600 text-white p-4 rounded-full shadow-lg z-50" aria-label="WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.819V19.5a3 3 0 01-3 3h-2.25C6.842 22.5 1.5 17.158 1.5 10.5V4.5z"/></svg>
-  </a>
-
-  <!-- Minimal JS -->
-  <script>
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    if (menuBtn && mobileMenu) {
-      menuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-        const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
-        menuBtn.setAttribute('aria-expanded', !expanded);
-      });
-    }
-
-    // Simple form submit handler (prevent default for demo)
-    const form = document.getElementById('sponsorForm');
-    if (form) {
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Gracias. Su solicitud ha sido enviada (demo).');
-        form.reset();
-      });
-    }
-  </script>
-</body>
+    <script src="script/main.js"></script>
+  </body>
+</html>
