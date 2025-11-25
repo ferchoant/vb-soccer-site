@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es" class="scroll-smooth">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,9 +19,72 @@
 
   <!-- Fav / OG -->
   <link rel="icon" href="./assets/imgs/favicon.svg" />
-  <meta name="description" content="Únete como sponsor a VB Soccer en Jesús María. Impulsamos fútbol y futsal femenino y masculino. Crece con nuestra comunidad real y comprometida." />
+  <meta name="description"
+    content="Únete como sponsor a VB Soccer en Jesús María. Impulsamos fútbol y futsal femenino y masculino. Crece con nuestra comunidad real y comprometida." />
   <meta property="og:title" content="VB Soccer Jesús María | Patrocinio de Talento" />
-  <meta property="og:description" content="Formamos talento en fútbol y futsal con espíritu competitivo y enfoque social. Súmate como sponsor." />
+  <meta property="og:description"
+    content="Formamos talento en fútbol y futsal con espíritu competitivo y enfoque social. Súmate como sponsor." />
+  <meta property="og:image" content="https://placehold.co/1200x630/15803d/ffffff?text=VB+Soccer+Patrocinio" />
+  <meta property="og:url" content="https://vbsoccer.pe/patrocina" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- JSON-LD (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "VB Soccer",
+    "alternateName": "Club VB Soccer",
+    "sport": ["Soccer", "Futsal"],
+    "areaServed": "Jesús María, Lima, PE",
+    "location": {
+      "@type": "Place",
+      "name": "Campo de Marte",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jesús María",
+        "addressRegion": "Lima",
+        "addressCountry": "PE"
+      }
+    },
+    "url": "https://vbsoccer.pe",
+    "logo": "https://placehold.co/300x300/15803d/ffffff?text=VB+Logo",
+    "sameAs": [
+      "https://www.instagram.com/club_vbsoccer_femenino/",
+      "https://www.instagram.com/club_vbsoccer/",
+      "https://www.tiktok.com/@vb.soccer"
+    ],
+    "potentialAction": {
+      "@type": "Action",
+      "name": "Patrocina a VB Soccer",
+      "target": {
+        "@type": "EntryPoint",
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VB Soccer Jesús María | Patrocinio de Talento</title>
+
+  <!-- Canonical & Robots -->
+  <link rel="canonical" href="https://vbsoccer.pe/patrocina" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Tailwind CSS (modelo) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <!-- Fav / OG -->
+  <link rel="icon" href="./assets/imgs/favicon.svg" />
+  <meta name="description"
+    content="Únete como sponsor a VB Soccer en Jesús María. Impulsamos fútbol y futsal femenino y masculino. Crece con nuestra comunidad real y comprometida." />
+  <meta property="og:title" content="VB Soccer Jesús María | Patrocinio de Talento" />
+  <meta property="og:description"
+    content="Formamos talento en fútbol y futsal con espíritu competitivo y enfoque social. Súmate como sponsor." />
   <meta property="og:image" content="https://placehold.co/1200x630/15803d/ffffff?text=VB+Soccer+Patrocinio" />
   <meta property="og:url" content="https://vbsoccer.pe/patrocina" />
   <meta property="og:type" content="website" />
@@ -63,16 +127,9 @@
   }
   </script>
 
-  <style>
-    body { font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
-    .font-heading { font-weight: 800; }
-    .text-primary { color: #D41414; }
-    .bg-primary { background-color: #D41414; }
-    section[id]{ scroll-margin-top: 90px; }
-    /* small helper so existing bootstrap assets in project don't break layout */
-    .logo-img { height: 40px; width: auto; }
-  </style>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body class="bg-gray-100 text-gray-800">
 
   <!-- Header -->
@@ -83,9 +140,12 @@
         <span class="text-2xl font-bold text-primary font-heading">VB Soccer</span>
       </a>
 
-      <button id="menuBtn" class="md:hidden p-2 rounded hover:bg-gray-100" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      <button id="menuBtn" class="md:hidden p-2 rounded hover:bg-gray-100" aria-label="Abrir menú" aria-expanded="false"
+        aria-controls="mobileMenu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
       </button>
 
@@ -95,7 +155,9 @@
         <a href="#comunidad" class="text-gray-600 hover:text-primary transition">Comunidad</a>
         <a href="#sponsors" class="text-gray-600 hover:text-primary transition">Sponsorship</a>
         <a href="#contacto" class="text-gray-600 hover:text-primary transition">Contacto</a>
-        <a href="#sponsors" class="bg-primary text-white px-5 py-2 rounded-lg shadow-lg hover:bg-opacity-80 transition transform hover:scale-105" onclick="gtag && gtag('event','cta_sponsor_header')">Patrocina Ahora</a>
+        <a href="#sponsors"
+          class="bg-primary text-white px-5 py-2 rounded-lg shadow-lg hover:bg-opacity-80 transition transform hover:scale-105"
+          onclick="gtag && gtag('event','cta_sponsor_header')">Patrocina Ahora</a>
       </div>
     </nav>
 
@@ -115,22 +177,29 @@
     <!-- HERO -->
     <section id="home" class="h-screen min-h-[680px] flex items-center justify-center text-white relative">
       <div class="absolute inset-0">
-        <img src="https://placehold.co/1920x1080/D41414/333?text=Entrenos+VB+Soccer" alt="Entrenamiento VB Soccer" class="w-full h-full object-cover opacity-60" loading="eager">
+        <img src="https://placehold.co/1920x1080/D41414/333?text=Entrenos+VB+Soccer" alt="Entrenamiento VB Soccer"
+          class="w-full h-full object-cover opacity-60" loading="eager">
       </div>
       <div class="absolute inset-0 bg-gradient-to-b from-[rgba(212,20,20,.7)] to-[rgba(10,10,10,.9)]"></div>
       <div class="container mx-auto px-6 text-center z-10 relative">
         <h1 class="text-4xl md:text-6xl font-heading mb-4">VB Soccer — Jesús María: Fútbol y Futsal con proyección</h1>
-        <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-light">Formamos talento femenino y masculino. Súmate como sponsor y crece con una comunidad real y comprometida.</p>
+        <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-light">Formamos talento femenino y masculino. Súmate
+          como sponsor y crece con una comunidad real y comprometida.</p>
         <div class="flex flex-col sm:flex-row justify-center gap-4">
-          <a href="#sponsors" class="bg-primary text-white px-8 py-3 rounded-lg text-lg font-semibold shadow-lg">Patrocina Ahora</a>
-          <a href="https://wa.me/51999999999?text=Hola%20VB%20Soccer,%20quisiera%20unirme" target="_blank" rel="noopener" class="bg-transparent border-2 border-yellow-500 text-white px-8 py-3 rounded-lg text-lg font-semibold">Únete (WhatsApp)</a>
+          <a href="#sponsors"
+            class="bg-primary text-white px-8 py-3 rounded-lg text-lg font-semibold shadow-lg">Patrocina Ahora</a>
+          <a href="https://wa.me/51999999999?text=Hola%20VB%20Soccer,%20quisiera%20unirme" target="_blank"
+            rel="noopener"
+            class="bg-transparent border-2 border-yellow-500 text-white px-8 py-3 rounded-lg text-lg font-semibold">Únete
+            (WhatsApp)</a>
         </div>
       </div>
 
       <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-6 z-10">
         <div class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-white">
           <div><span class="text-3xl font-bold">8+</span><span class="block text-sm uppercase">Años</span></div>
-          <div><span class="text-3xl font-bold">150+</span><span class="block text-sm uppercase">Jugadoras/es</span></div>
+          <div><span class="text-3xl font-bold">150+</span><span class="block text-sm uppercase">Jugadoras/es</span>
+          </div>
           <div><span class="text-3xl font-bold">10+</span><span class="block text-sm uppercase">Torneos</span></div>
           <div><span class="text-3xl font-bold">25K+</span><span class="block text-sm uppercase">Alcance</span></div>
         </div>
@@ -141,7 +210,8 @@
     <section id="quienes-somos" class="py-24 bg-white">
       <div class="container mx-auto px-6 max-w-4xl text-center">
         <h2 class="text-4xl font-heading mb-6">Quiénes Somos</h2>
-        <p class="text-lg text-gray-700 mb-6">Club de Jesús María que impulsa el desarrollo del fútbol y futsal en ramas femenina y masculina. Entrenamos con enfoque competitivo y formativo.</p>
+        <p class="text-lg text-gray-700 mb-6">Club de Jesús María que impulsa el desarrollo del fútbol y futsal en ramas
+          femenina y masculina. Entrenamos con enfoque competitivo y formativo.</p>
         <div class="flex flex-wrap justify-center gap-4 mt-6">
           <span class="bg-black text-yellow-400 text-sm font-semibold px-4 py-2 rounded-full">Fútbol 11 (M/F)</span>
           <span class="bg-black text-yellow-400 text-sm font-semibold px-4 py-2 rounded-full">Futsal Pro (F)</span>
@@ -170,9 +240,12 @@
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
-          <img loading="lazy" src="https://placehold.co/600x400/D41414/white?text=Equipo+Celebrando" alt="Equipo celebrando" class="rounded-lg object-cover w-full h-40">
-          <img loading="lazy" src="https://placehold.co/600x400/D41414/white?text=Partido+Futsal" alt="Partido futsal" class="rounded-lg object-cover w-full h-40">
-          <img loading="lazy" src="https://placehold.co/600x400/D41414/white?text=Entrenamiento" alt="Entrenamiento" class="rounded-lg object-cover w-full h-40">
+          <img loading="lazy" src="https://placehold.co/600x400/D41414/white?text=Equipo+Celebrando"
+            alt="Equipo celebrando" class="rounded-lg object-cover w-full h-40">
+          <img loading="lazy" src="https://placehold.co/600x400/D41414/white?text=Partido+Futsal" alt="Partido futsal"
+            class="rounded-lg object-cover w-full h-40">
+          <img loading="lazy" src="https://placehold.co/600x400/D41414/white?text=Entrenamiento" alt="Entrenamiento"
+            class="rounded-lg object-cover w-full h-40">
         </div>
       </div>
     </section>
@@ -234,38 +307,51 @@
         <div class="grid md:grid-cols-3 gap-6">
           <div class="bg-white p-4 rounded shadow">
             <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3"><img src="https://placehold.co/40x40/E1306C/white?text=IG" alt="" class="rounded-full"><span class="font-semibold">@club_vbsoccer_femenino</span></div>
-              <a href="https://www.instagram.com/club_vbsoccer_femenino/" target="_blank" rel="noopener" class="bg-pink-600 text-white px-3 py-1 rounded">Seguir</a>
+              <div class="flex items-center gap-3"><img src="https://placehold.co/40x40/E1306C/white?text=IG" alt=""
+                  class="rounded-full"><span class="font-semibold">@club_vbsoccer_femenino</span></div>
+              <a href="https://www.instagram.com/club_vbsoccer_femenino/" target="_blank" rel="noopener"
+                class="bg-pink-600 text-white px-3 py-1 rounded">Seguir</a>
             </div>
-            <img src="https://placehold.co/600x600/e0e0e0/333?text=Post+IG" alt="Post IG" class="rounded w-full object-cover">
+            <img src="https://placehold.co/600x600/e0e0e0/333?text=Post+IG" alt="Post IG"
+              class="rounded w-full object-cover">
           </div>
 
           <div class="bg-white p-4 rounded shadow">
             <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3"><img src="https://placehold.co/40x40/000000/white?text=TT" alt="" class="rounded-full"><span class="font-semibold">@vb.soccer</span></div>
-              <a href="https://www.tiktok.com/@vb.soccer" target="_blank" rel="noopener" class="bg-black text-white px-3 py-1 rounded">Seguir</a>
+              <div class="flex items-center gap-3"><img src="https://placehold.co/40x40/000000/white?text=TT" alt=""
+                  class="rounded-full"><span class="font-semibold">@vb.soccer</span></div>
+              <a href="https://www.tiktok.com/@vb.soccer" target="_blank" rel="noopener"
+                class="bg-black text-white px-3 py-1 rounded">Seguir</a>
             </div>
             <div class="grid grid-cols-2 gap-2">
-              <img src="https://placehold.co/300x500/e0e0e0/333?text=TikTok" alt="TikTok" class="rounded object-cover w-full">
-              <img src="https://placehold.co/300x500/e0e0e0/333?text=TikTok+2" alt="TikTok 2" class="rounded object-cover w-full">
+              <img src="https://placehold.co/300x500/e0e0e0/333?text=TikTok" alt="TikTok"
+                class="rounded object-cover w-full">
+              <img src="https://placehold.co/300x500/e0e0e0/333?text=TikTok+2" alt="TikTok 2"
+                class="rounded object-cover w-full">
             </div>
           </div>
 
           <div class="bg-white p-4 rounded shadow">
             <div class="flex items-center justify-between mb-3">
-              <div class="flex items-center gap-3"><img src="https://placehold.co/40x40/E1306C/white?text=IG" alt="" class="rounded-full"><span class="font-semibold">@club_vbsoccer</span></div>
-              <a href="https://www.instagram.com/club_vbsoccer/" target="_blank" rel="noopener" class="bg-pink-600 text-white px-3 py-1 rounded">Seguir</a>
+              <div class="flex items-center gap-3"><img src="https://placehold.co/40x40/E1306C/white?text=IG" alt=""
+                  class="rounded-full"><span class="font-semibold">@club_vbsoccer</span></div>
+              <a href="https://www.instagram.com/club_vbsoccer/" target="_blank" rel="noopener"
+                class="bg-pink-600 text-white px-3 py-1 rounded">Seguir</a>
             </div>
             <div class="grid grid-cols-2 gap-2">
-              <img src="https://placehold.co/300x300/e0e0e0/333?text=Post+1" alt="Post 1" class="rounded object-cover w-full">
-              <img src="https://placehold.co/300x300/e0e0e0/333?text=Post+2" alt="Post 2" class="rounded object-cover w-full">
+              <img src="https://placehold.co/300x300/e0e0e0/333?text=Post+1" alt="Post 1"
+                class="rounded object-cover w-full">
+              <img src="https://placehold.co/300x300/e0e0e0/333?text=Post+2" alt="Post 2"
+                class="rounded object-cover w-full">
             </div>
           </div>
         </div>
 
         <div class="text-center mt-12 flex flex-col sm:flex-row justify-center gap-4">
-          <a href="https://wa.me/51999999999?text=Hola,%20quiero%20unirme" target="_blank" rel="noopener" class="bg-green-600 text-white px-8 py-3 rounded-lg">Únete al WhatsApp</a>
-          <a href="https://www.facebook.com/groups/VBSoccerComunidad" target="_blank" rel="noopener" class="bg-blue-600 text-white px-8 py-3 rounded-lg">Grupo de Facebook</a>
+          <a href="https://wa.me/51999999999?text=Hola,%20quiero%20unirme" target="_blank" rel="noopener"
+            class="bg-green-600 text-white px-8 py-3 rounded-lg">Únete al WhatsApp</a>
+          <a href="https://www.facebook.com/groups/VBSoccerComunidad" target="_blank" rel="noopener"
+            class="bg-blue-600 text-white px-8 py-3 rounded-lg">Grupo de Facebook</a>
         </div>
       </div>
     </section>
@@ -274,7 +360,8 @@
     <section id="sponsors" class="py-24 bg-white">
       <div class="container mx-auto px-6">
         <h2 class="text-4xl font-heading text-center mb-6">Plan de Sponsorship</h2>
-        <p class="text-center text-lg mb-12">Impulsa tu marca. Conoce nuestros paquetes diseñados para máxima visibilidad.</p>
+        <p class="text-center text-lg mb-12">Impulsa tu marca. Conoce nuestros paquetes diseñados para máxima
+          visibilidad.</p>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- Bronce -->
@@ -303,7 +390,8 @@
 
           <!-- Oro -->
           <div class="border-2 border-primary rounded p-6 shadow-xl flex flex-col relative">
-            <span class="absolute -top-3 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">Más Popular</span>
+            <span class="absolute -top-3 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">Más
+              Popular</span>
             <h3 class="text-2xl font-bold text-yellow-600 mb-3">Oro</h3>
             <p class="font-semibold mb-4">S/ 3,500 – 7,000 / mes</p>
             <ul class="space-y-2 text-gray-600 flex-grow">
@@ -329,7 +417,8 @@
         </div>
 
         <div class="text-center mt-12">
-          <a href="URL_MEDIA_KIT.pdf" target="_blank" rel="noopener" class="text-primary font-semibold">Descarga el Media Kit 2025</a>
+          <a href="URL_MEDIA_KIT.pdf" target="_blank" rel="noopener" class="text-primary font-semibold">Descarga el
+            Media Kit 2025</a>
         </div>
       </div>
     </section>
@@ -340,19 +429,22 @@
         <h2 class="text-4xl font-heading text-center mb-12">Voces del Club</h2>
         <div class="grid md:grid-cols-3 gap-8">
           <div class="bg-white p-6 rounded shadow text-center">
-            <img src="https://placehold.co/100x100/e0e0e0/333?text=Coach" alt="Coach" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-yellow-300">
+            <img src="https://placehold.co/100x100/e0e0e0/333?text=Coach" alt="Coach"
+              class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-yellow-300">
             <p class="italic mb-4">"Patrocinar a VB Soccer es una inversión en la comunidad."</p>
             <p class="font-bold">Juan Pérez</p>
             <p class="text-sm text-primary">Head Coach</p>
           </div>
           <div class="bg-white p-6 rounded shadow text-center">
-            <img src="https://placehold.co/100x100/e0e0e0/333?text=Jugadora" alt="Jugadora" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-yellow-300">
+            <img src="https://placehold.co/100x100/e0e0e0/333?text=Jugadora" alt="Jugadora"
+              class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-yellow-300">
             <p class="italic mb-4">"El apoyo de los sponsors nos permite competir al más alto nivel."</p>
             <p class="font-bold">María Rodríguez</p>
             <p class="text-sm text-primary">Capitana Futsal Pro</p>
           </div>
           <div class="bg-white p-6 rounded shadow text-center">
-            <img src="https://placehold.co/100x100/e0e0e0/333?text=Sponsor" alt="Sponsor" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-yellow-300">
+            <img src="https://placehold.co/100x100/e0e0e0/333?text=Sponsor" alt="Sponsor"
+              class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-yellow-300">
             <p class="italic mb-4">"La activación en Campo de Marte fue un éxito."</p>
             <p class="font-bold">Carlos Mendoza</p>
             <p class="text-sm text-primary">Gerente de Marca</p>
@@ -365,10 +457,13 @@
     <section id="contacto" class="py-24 bg-black text-gray-100">
       <div class="container mx-auto px-6">
         <h2 class="text-4xl font-heading text-center mb-8">Sé Parte de la Familia VB Soccer</h2>
-        <p class="text-center mb-12 max-w-2xl mx-auto">Buscamos marcas que quieran crecer con nosotros y talento joven con ganas de competir.</p>
+        <p class="text-center mb-12 max-w-2xl mx-auto">Buscamos marcas que quieran crecer con nosotros y talento joven
+          con ganas de competir.</p>
 
         <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
           <form id="sponsorForm" class="space-y-6 bg-gray-900 p-6 rounded">
+            <!-- Hidden input for date -->
+            <input type="hidden" name="fecha" id="fechaInput">
             <div class="grid sm:grid-cols-2 gap-4">
               <div>
                 <label class="text-sm">Nombre</label>
@@ -422,13 +517,16 @@
             <div class="bg-gray-900 p-6 rounded">
               <h3 class="text-2xl font-bold mb-2">Contacto Directo</h3>
               <p class="text-gray-300 mb-4">Escríbenos por WhatsApp para recibir el Media Kit y agendar una llamada.</p>
-              <a href="https://wa.me/51999999999?text=Hola%20VB%20Soccer,%20estoy%20interesado" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-green-600 px-4 py-3 rounded text-white">Chatea por WhatsApp</a>
+              <a href="https://wa.me/51999999999?text=Hola%20VB%20Soccer,%20estoy%20interesado" target="_blank"
+                rel="noopener" class="inline-flex items-center gap-2 bg-green-600 px-4 py-3 rounded text-white">Chatea
+                por WhatsApp</a>
             </div>
 
             <div class="bg-gray-900 p-6 rounded">
               <h3 class="text-2xl font-bold mb-2">Nuestra Casa</h3>
               <p class="text-gray-300 mb-4">Entrenamos en Campo de Marte, Jesús María.</p>
-              <img src="https://placehold.co/600x400/333333/888888?text=Mapa+Campo+de+Marte" alt="Mapa" class="rounded w-full object-cover">
+              <img src="https://placehold.co/600x400/333333/888888?text=Mapa+Campo+de+Marte" alt="Mapa"
+                class="rounded w-full object-cover">
             </div>
           </div>
         </div>
@@ -441,40 +539,26 @@
   <footer class="bg-gray-900 text-gray-400 py-12">
     <div class="container mx-auto px-6 text-center">
       <div class="flex justify-center space-x-6 mb-6">
-        <a href="https://www.instagram.com/club_vbsoccer_femenino/" target="_blank" rel="noopener" aria-label="Instagram">@IG</a>
+        <a href="https://www.instagram.com/club_vbsoccer_femenino/" target="_blank" rel="noopener"
+          aria-label="Instagram">@IG</a>
         <a href="https://www.tiktok.com/@vb.soccer" target="_blank" rel="noopener" aria-label="TikTok">@TT</a>
-        <a href="https://www.facebook.com/groups/VBSoccerComunidad" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+        <a href="https://www.facebook.com/groups/VBSoccerComunidad" target="_blank" rel="noopener"
+          aria-label="Facebook">Facebook</a>
       </div>
       <p class="text-sm">&copy; 2025 VB Soccer. Todos los derechos reservados. Jesús María, Lima, Perú.</p>
     </div>
   </footer>
 
   <!-- Floating CTA (móvil) -->
-  <a href="https://wa.me/51999999999?text=Hola%20VB%20Soccer,%20estoy%20interesado" target="_blank" rel="noopener" class="md:hidden fixed bottom-4 right-4 bg-green-600 text-white p-4 rounded-full shadow-lg z-50" aria-label="WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.819V19.5a3 3 0 01-3 3h-2.25C6.842 22.5 1.5 17.158 1.5 10.5V4.5z"/></svg>
+  <a href="https://wa.me/51999999999?text=Hola%20VB%20Soccer,%20estoy%20interesado" target="_blank" rel="noopener"
+    class="md:hidden fixed bottom-4 right-4 bg-green-600 text-white p-4 rounded-full shadow-lg z-50"
+    aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.819V19.5a3 3 0 01-3 3h-2.25C6.842 22.5 1.5 17.158 1.5 10.5V4.5z" />
+    </svg>
   </a>
 
   <!-- Minimal JS -->
-  <script>
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    if (menuBtn && mobileMenu) {
-      menuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-        const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
-        menuBtn.setAttribute('aria-expanded', !expanded);
-      });
-    }
-
-    // Simple form submit handler (prevent default for demo)
-    const form = document.getElementById('sponsorForm');
-    if (form) {
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Gracias. Su solicitud ha sido enviada (demo).');
-        form.reset();
-      });
-    }
-  </script>
+  <script src="./js/main.js"></script>
 </body>

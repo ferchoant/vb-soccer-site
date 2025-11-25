@@ -1,0 +1,7 @@
+body { font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+.font-heading { font-weight: 800; }
+.text-primary { color: #D41414; }
+.bg-primary { background-color: #D41414; }
+section[id]{ scroll-margin-top: 90px; }
+/* small helper so existing bootstrap assets in project don't break layout */
+.logo-img { height: 40px; width: auto; }
