@@ -1,0 +1,29 @@
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+
+# System files
+.AppleDouble
+.LSOverride
+
+# Windows image file caches
+ehthumbs.db
+
+# Folder config file
+[Dd]esktop.ini

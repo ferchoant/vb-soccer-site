@@ -1,41 +1,97 @@
-# Responsive Digital Agency Website
+# VB Soccer - Club Deportivo Jesús María
 
-This is a Sports Club Website created using **JavaScript**, **HTML**, and **CSS**.
+Landing page moderna y responsive para el Club VB Soccer de Jesús María, Lima.
 
-## Generar un único archivo HTML
+![VB Soccer](./assets/imgs/logo.jpg)
 
-Si necesitas un solo archivo que contenga el marcado, los estilos y los scripts, puedes usar el script de combinación incluido.
+## 🎯 Descripción
 
-```bash
-node scripts/combine-assets.js
+Sitio web oficial del Club VB Soccer, un club deportivo comprometido con la formación integral en fútbol y futsal, representando a Jesús María con pasión, disciplina y valores.
+
+## ✨ Características
+
+- 🎨 **Diseño Moderno**: Tema oscuro elegante con acentos rojo y dorado
+- 📱 **Responsive Design**: Optimizado para móvil, tablet y desktop
+- 🖼️ **Galería Interactiva**: Lightbox funcional con navegación por teclado y touch
+- ⚡ **Performance**: HTML5, CSS3 y JavaScript vanilla (sin frameworks pesados)
+- 🎯 **SEO Optimizado**: Semántica HTML correcta y meta tags
+- ♿ **Accesible**: Navegación por teclado y ARIA labels
+
+## 📂 Estructura del Proyecto
+
+```
+vb_soccer_site/
+├── index.html          # Página principal
+├── css/
+│   └── styles.css      # Estilos completos
+├── js/
+│   └── main.js         # JavaScript interactivo
+└── assets/
+    └── imgs/           # Imágenes del club
 ```
 
-El comando anterior genera `index.all-in-one.html`, que ya incluye el contenido de `style/fonts.css`, `style/bootstrap.css`, `style/theme.css`, `script/bootstrap.bundle.min.js` y `script/main.js`. Solo abre ese archivo en tu navegador o súbelo a tu hosting preferido.
-Live Demo: [https://prasadlakhara.github.io/bestfoot-soccer-sports-web-Template/](https://prasadlakhara.github.io/bestfoot-soccer-sports-web-Template/)
+## 🚀 Uso
 
-## Steps to Clone and Customize
+### Abrir localmente
 
-1. **Clone the Repository**
-   Clone this website repository from GitHub:
-   ```bash
-   git clone <repository_url>
-   ```
+Simplemente abre el archivo `index.html` en tu navegador web, o usa un servidor local:
 
-2. **Update Data**
-   Modify the data in the constants file to reflect your personal details.
-   And need to change in html files
+```bash
+# Usando Python
+python -m http.server 8000
 
-4. **Run Locally**
-   Serve the project locally and check if all changes are reflected:
-   ```bash
-   # For example, using Python's HTTP server
-   python -m http.server
-   ```
-   Open your browser and navigate to `http://localhost:8000`.
+# Usando Node.js
+npx serve
 
-5. **Host Your Website**
-   Use hosting platforms like **Netlify**, **Vercel**, or **GitHub Pages** to deploy and host your website.
+# Usando Live Server (VS Code)
+# Click derecho en index.html > "Open with Live Server"
+```
+
+Luego visita: `http://localhost:8000`
+
+### Deploy
+
+Puedes deployar este sitio en cualquier servicio de hosting estático:
+
+- **GitHub Pages**: Sube el proyecto a un repositorio y activa GitHub Pages
+- **Netlify**: Arrastra la carpeta al dashboard de Netlify
+- **Vercel**: Conecta tu repositorio Git
+- **Surge**: `surge` desde la carpeta del proyecto
+
+## 🏆 Secciones
+
+1. **Hero**: Imagen destacada con CTAs principales
+2. **Ramas Deportivas**: Fútbol Masculino, Fútbol Femenino, Futsal Femenino, Sub-12 CONMEBOL
+3. **Logros**: Campeonatos y reconocimientos con fotos
+4. **Galería**: Grid de imágenes con lightbox
+5. **Sponsors**: Información de patrocinio
+6. **Contacto**: WhatsApp, email, ubicación y redes sociales
+7. **Footer**: Enlaces rápidos y copyright
+
+## 📞 Contacto
+
+- **WhatsApp**: [+51 988 880 449](https://wa.me/51988880449)
+- **Email**: clubvbsoccer@gmail.com
+- **Ubicación**: Campo de Marte, Jesús María, Lima, Perú
+
+## 🔗 Redes Sociales
+
+- Instagram Femenino: [@club_vbsoccer_femenino](https://www.instagram.com/club_vbsoccer_femenino)
+- Instagram Masculino: [@club_vbsoccer](https://www.instagram.com/club_vbsoccer)
+- Facebook: [ClubVB](https://www.facebook.com/ClubVB)
+- TikTok: [@vb.soccer](https://www.tiktok.com/@vb.soccer)
+
+## 🛠️ Tecnologías
+
+- HTML5
+- CSS3 (Vanilla CSS con variables CSS)
+- JavaScript ES6+
+- Google Fonts (Inter)
+
+## 📝 Licencia
+
+© 2026 VB Soccer. Todos los derechos reservados.
 
 ---
 
-Enjoy showcasing your personalized portfolio!
+**"Integrando talentos, formando campeones"**
